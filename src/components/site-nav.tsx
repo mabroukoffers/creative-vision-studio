@@ -1,7 +1,7 @@
 const links = [
   { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
-  { href: "#breakdown", label: "Process" },
+  { href: "#skills", label: "Skills" },
+  { href: "#work", label: "Projects" },
   { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
@@ -12,9 +12,11 @@ export function SiteNav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border/70 bg-card/85 px-4 py-2.5 shadow-[var(--shadow-lift)] backdrop-blur-md sm:px-6">
         <a href="#top" className="flex items-center gap-2.5">
           <span className="grid size-8 place-items-center rounded-full bg-primary font-display text-sm font-extrabold text-primary-foreground">
-            MY
+            MS
           </span>
-          <span className="font-display text-sm font-bold tracking-tight">Muh. Yasin</span>
+          <span className="font-display text-sm font-bold tracking-tight">
+            Healthcare Full-Stack Dev
+          </span>
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -35,7 +37,7 @@ export function SiteNav() {
           className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-semibold tracking-wide text-primary-foreground uppercase transition-transform hover:-translate-y-0.5"
         >
           <span className="size-1.5 rounded-full bg-brand-yellow" />
-          Available 2026
+          Available Q3 2026
         </a>
       </nav>
     </header>
