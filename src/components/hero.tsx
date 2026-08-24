@@ -1,4 +1,4 @@
-import portrait from "@/assets/portrait.png";
+import portrait from "@/assets/portrait-dev.png";
 import { stats, tools } from "@/data/projects";
 
 export function Hero() {
@@ -9,20 +9,18 @@ export function Hero() {
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1.5 text-xs font-semibold tracking-[0.18em] text-muted-foreground uppercase">
-                Creative Portfolio · 2026
+                Available for healthcare projects · Q3 2026
               </p>
 
               <h1 className="mt-6 font-display text-5xl leading-[0.95] font-extrabold sm:text-6xl lg:text-7xl">
-                Illustration,
+                Full-Stack Developer
                 <br />
-                motion &amp;{" "}
-                <span className="text-brand-orange">2D–3D visual storytelling.</span>
+                <span className="text-brand-orange">Healthcare &amp; Clinic Systems.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-                A curated selection of professional and personal works. This portfolio reflects my
-                experience in animation studios as well as my ongoing exploration of 3D, cinematic
-                visuals, and stylized design through fun and experimental projects.
+                Building secure, HIPAA-compliant, and efficient digital products for hospitals,
+                clinics, and telemedicine providers worldwide.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -30,13 +28,13 @@ export function Hero() {
                   href="#work"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                 >
-                  View selected work
+                  View projects
                 </a>
                 <a
                   href="#contact"
                   className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
                 >
-                  Start a project
+                  Get in touch
                 </a>
               </div>
 
@@ -53,17 +51,17 @@ export function Hero() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-x-6 top-8 bottom-8 rounded-[2.5rem] bg-brand-yellow/45" />
+              <div className="absolute inset-x-6 top-8 bottom-8 rounded-[2.5rem] bg-brand-teal/25" />
               <div className="absolute inset-x-10 top-14 bottom-4 rounded-[2.5rem] bg-brand-sky/35" />
               <img
                 src={portrait}
-                alt="Illustrated portrait of Muh. Yasin, graphic designer and illustrator"
+                alt="Illustrated portrait of a full-stack healthcare developer"
                 width={1024}
                 height={1024}
-                className="relative mx-auto w-full max-w-sm drop-shadow-[0_18px_30px_rgba(0,0,0,0.16)]"
+                className="relative mx-auto w-full max-w-sm rounded-[2rem] drop-shadow-[0_18px_30px_rgba(0,0,0,0.16)]"
               />
               <p className="relative mt-2 text-center font-display text-sm font-bold">
-                Muh. Yasin — Yogyakarta, Indonesia
+                Healthcare engineering · Remote worldwide
               </p>
             </div>
           </div>

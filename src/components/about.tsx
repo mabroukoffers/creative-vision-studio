@@ -1,33 +1,39 @@
 const timeline = [
   {
-    period: "2024 — Now",
-    role: "Freelance Illustrator & Art Director",
-    place: "Independent · Remote",
-    note: "Key visuals, identity systems, and motion direction for studios, NGOs, and local brands.",
+    period: "2023 — Present",
+    role: "Lead Full-Stack Engineer — Healthcare",
+    place: "MediCore Health Systems",
+    note: "Architected a multi-tenant clinic platform serving 12 branches. Led HIPAA compliance, FHIR integrations, and a team of 6 engineers.",
   },
   {
-    period: "2022 — 2024",
-    role: "2D Animator & Illustrator",
-    place: "Animation Studio · Yogyakarta",
-    note: "Storyboards, character layouts, and shot-level animation across broadcast and campaign work.",
+    period: "2021 — 2023",
+    role: "Senior Full-Stack Developer",
+    place: "VitalLink Telehealth",
+    note: "Built a WebRTC telemedicine product from zero to 50k MAU. Designed end-to-end encryption and real-time vitals streaming.",
   },
   {
-    period: "2019 — 2022",
-    role: "Visual Communication Design",
-    place: "STSRD VISI Yogyakarta",
-    note: "Illustration, typography, and art direction fundamentals; campaign design for the campus.",
+    period: "2019 — 2021",
+    role: "Full-Stack Developer",
+    place: "ChartFlow EHR",
+    note: "Delivered EHR modules integrating HL7/FHIR with 30+ hospital systems. Cut clinician charting time by 30%.",
+  },
+  {
+    period: "2017 — 2019",
+    role: "Software Engineer",
+    place: "Independent Clinics Network",
+    note: "Developed appointment booking, billing, and patient portal modules for a network of 40+ private clinics.",
   },
 ];
 
 const capabilities = [
-  "Art Direction",
-  "Illustration",
-  "Motion Design",
-  "Visual Identity",
-  "Storyboarding",
-  "3D Look Dev",
-  "Character Design",
-  "Layout & Typography",
+  "EHR / EMR Systems",
+  "Telemedicine",
+  "Appointment Booking",
+  "Patient Portals",
+  "Medical Billing",
+  "Pharmacy & Inventory",
+  "HL7 / FHIR",
+  "HIPAA & GDPR",
 ];
 
 export function About() {
@@ -36,22 +42,22 @@ export function About() {
       <div className="mx-auto grid max-w-6xl gap-4 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="slide-card px-6 py-9 sm:px-10">
           <p className="text-xs font-semibold tracking-[0.2em] text-brand-orange uppercase">
-            About
+            About me
           </p>
           <h2 className="mt-4 font-display text-3xl leading-tight font-extrabold sm:text-4xl">
-            I build visuals that carry a story from the first frame to the last asset.
+            Engineering trust into every line of care.
           </h2>
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
             <p>
-              I&apos;m a graphic designer and illustrator based in Yogyakarta, working between flat
-              vector illustration, 2D animation, and stylized 3D. My work usually starts with a
-              narrative — a metaphor, a moment, a place — and then gets translated into a complete
-              system of visuals a client can actually use.
+              I&apos;m a full-stack developer with deep specialization in healthcare and clinic
+              management systems. Over the past seven years I&apos;ve built HIPAA-compliant EHR
+              platforms, telemedicine products, smart appointment systems, and pharmacy &amp;
+              inventory tooling used by hundreds of clinicians every day.
             </p>
             <p>
-              Studio years taught me pipeline discipline: concept boards, revisions, deadlines, and
-              handoff files that behave. Personal projects keep the experimenting alive — cinematic
-              lighting, dioramas, and characters with too much personality.
+              My focus is the intersection of clinical workflow, security, and delightful UX. I work
+              closely with doctors, administrators, and compliance teams to turn complex regulations
+              into products that feel effortless to use — without ever compromising patient data.
             </p>
           </div>
 
