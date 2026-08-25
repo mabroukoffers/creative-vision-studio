@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { SpotlightCard } from "./SpotlightCard";
 import { WaveDivider } from "./WaveDivider";
 import { SectionHeader } from "./SectionHeader";
 
@@ -77,8 +78,8 @@ export function Expertise() {
 
         <div className="mt-10 grid sm:mt-12 gap-6 md:grid-cols-2">
           {pillars.map((p, i) => (
-            <Reveal key={p.title} delay={i * 80}>
-              <div className="lift group relative h-full overflow-hidden rounded-4xl border border-primary-foreground/12 bg-primary-foreground/[0.04] p-8 transition-colors duration-500 hover:border-accent/40 hover:bg-primary-foreground/[0.07] sm:p-9">
+            <Reveal key={p.title} delay={i * 80} variant="reveal-blur">
+              <SpotlightCard className="lift group relative h-full overflow-hidden rounded-4xl border border-primary-foreground/12 bg-primary-foreground/[0.04] p-8 transition-colors duration-500 hover:border-accent/40 hover:bg-primary-foreground/[0.07] sm:p-9">
                 <div className="flex items-start justify-between gap-4">
                   <span className="figure text-3xl text-accent">0{i + 1}</span>
                   <span className="rounded-full border border-primary-foreground/15 px-3.5 py-1.5 text-[0.65rem] tracking-[0.14em] text-primary-foreground/70 uppercase">
@@ -107,7 +108,7 @@ export function Expertise() {
                   aria-hidden="true"
                   className="absolute inset-x-8 bottom-0 h-px origin-left scale-x-0 bg-accent/70 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100"
                 />
-              </div>
+              </SpotlightCard>
             </Reveal>
           ))}
         </div>

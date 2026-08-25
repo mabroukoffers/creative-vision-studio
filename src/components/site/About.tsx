@@ -68,7 +68,7 @@ export function About() {
             </div>
           </Reveal>
 
-          <Reveal delay={100}>
+          <Reveal delay={100} variant="reveal-blur">
             <p className="leading-relaxed text-muted-foreground">
               I design systems around those failure points — bounded services, clean
               domain models and caching strategies that keep search instant even as
@@ -80,7 +80,7 @@ export function About() {
               home-buyer-facing frontends that rank and convert.
             </p>
 
-            <ul className="mt-10 grid gap-px overflow-hidden rounded-3xl bg-[var(--edge-line)] sm:grid-cols-2">
+            <Reveal as="ul" stagger={80} className="mt-10 grid gap-px overflow-hidden rounded-3xl bg-[var(--edge-line)] sm:grid-cols-2">
               {principles.map((p, i) => (
                 <li
                   key={p}
@@ -92,7 +92,7 @@ export function About() {
                   <span className="text-sm leading-relaxed">{p}</span>
                 </li>
               ))}
-            </ul>
+            </Reveal>
 
             <dl className="mt-10 divide-y divide-[var(--edge-line)] border-t border-[var(--edge-line)]">
               {credentials.map((c) => (
