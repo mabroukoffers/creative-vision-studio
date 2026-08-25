@@ -64,7 +64,11 @@ export function Contact() {
                 </p>
               </div>
 
-              <ul className="reveal-stagger divide-y divide-primary-foreground/15 border-y border-primary-foreground/15 lg:mt-2" data-visible="true">
+              <Reveal
+                as="ul"
+                stagger={90}
+                className="divide-y divide-primary-foreground/15 border-y border-primary-foreground/15 lg:mt-2"
+              >
                 {engagements.map((e) => (
                   <li key={e.title} className="group py-5">
                     <p className="text-sm transition-colors duration-300 group-hover:text-accent">
