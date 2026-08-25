@@ -1,12 +1,12 @@
-# Creative Vision Studio
+# Delightful Finance Hub
 
-clone this repo https://github.com/3megx/creative-vision-builder when be more matching identical styles and animation and imgs like have this https://www.behance.net/gallery/244739993/Creative-Portfolio-2026_Muh-Yasin
+clone https://github.com/carcoo453-sudo33/delightful-finance-hub to focus with get styles from have now very focus with nav and side to be all need working very will look at toggle mode and be very responsive to clean old files have and be very will from new have
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/9946e642-8121-4e5f-8e9f-c5ee9cbbf329).
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/22bece84-d31a-460a-8da1-656fdeb074db).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
