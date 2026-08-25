@@ -4,6 +4,7 @@ import iotImg from "@/assets/project-iot.jpg";
 import crmImg from "@/assets/project-crm.jpg";
 import pwaImg from "@/assets/project-pwa.jpg";
 import { Reveal } from "./Reveal";
+import { SpotlightCard } from "./SpotlightCard";
 import { SectionHeader } from "./SectionHeader";
 import { cn } from "@/lib/utils";
 
@@ -145,8 +146,11 @@ export function Projects() {
 
         <div className="mt-10 grid sm:mt-12 gap-8 lg:grid-cols-2">
           {visible.map((p, i) => (
-            <Reveal key={p.title} delay={i * 90}>
-              <article className="lift group h-full overflow-hidden rounded-4xl bg-card edge-card">
+            <Reveal key={p.title} delay={i * 90} variant="reveal-blur">
+              <SpotlightCard
+                as="article"
+                className="lift group h-full overflow-hidden rounded-4xl bg-card edge-card"
+              >
                 <div className="relative overflow-hidden">
                   <img
                     src={p.image}
@@ -194,7 +198,7 @@ export function Projects() {
                     ))}
                   </ul>
                 </div>
-              </article>
+              </SpotlightCard>
             </Reveal>
           ))}
         </div>

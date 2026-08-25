@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { SpotlightCard } from "./SpotlightCard";
 import { SectionHeader } from "./SectionHeader";
 
 const roles = [
@@ -74,8 +75,11 @@ export function Experience() {
               const panelId = `experience-panel-${i}`;
 
               return (
-                <Reveal key={r.company} delay={i * 100}>
-                  <article className="edge-card lift relative rounded-4xl bg-card p-6 sm:p-10">
+                <Reveal key={r.company} delay={i * 100} variant="reveal-blur">
+                  <SpotlightCard
+                    as="article"
+                    className="edge-card lift relative rounded-4xl bg-card p-6 sm:p-10"
+                  >
                     <span
                       aria-hidden="true"
                       className="absolute -left-6 top-11 hidden h-px w-6 bg-[var(--edge-seam)] sm:-left-10 sm:block sm:w-10"
@@ -168,7 +172,7 @@ export function Experience() {
                         </div>
                       </div>
                     </div>
-                  </article>
+                  </SpotlightCard>
                 </Reveal>
               );
             })}
