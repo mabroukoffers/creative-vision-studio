@@ -1,27 +1,37 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Nav } from "@/components/site/Nav";
-import { ScrollProgress } from "@/components/site/ScrollProgress";
-import { Hero } from "@/components/site/Hero";
-import { Stats } from "@/components/site/Stats";
-import { Projects } from "@/components/site/Projects";
-import { Expertise } from "@/components/site/Expertise";
-import { Experience } from "@/components/site/Experience";
-import { About } from "@/components/site/About";
-import { Contact, Footer } from "@/components/site/Contact";
-
-const title = "Mostafa Samir — Full Stack Engineer for Real Estate Platforms";
-const description =
-  "Senior full stack engineer building property listing portals, multi-tenant brokerage systems and real-time property dashboards with .NET 8, Angular and Next.js.";
+import { Toaster } from "sonner";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Projects } from "@/components/Projects";
+import { Experience } from "@/components/Experience";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Aaron — Full-Stack Developer | Banking & FinTech Specialist" },
+      {
+        name: "description",
+        content:
+          "Senior full-stack developer building secure, scalable digital banking, payment, and FinTech platforms for banks and fintech challengers.",
+      },
+      { property: "og:title", content: "Aaron — Banking & FinTech Full-Stack Developer" },
+      {
+        property: "og:description",
+        content: "Secure, compliant, high-throughput banking and payment systems — from core ledgers to mobile wallets.",
+      },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap",
+      },
     ],
   }),
   component: Index,
@@ -29,23 +39,29 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main id="top">
-      <ScrollProgress />
-      <Nav />
-      <Hero />
-      <div className="defer-paint">
-        <Stats />
-        <Projects />
-      </div>
-      <div className="defer-paint">
-        <Expertise />
-        <Experience />
-      </div>
-      <div className="defer-paint">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <SmoothScroll />
+      <Toaster
+        theme="dark"
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: "var(--surface-2)",
+            color: "var(--foreground)",
+            border: "1px solid var(--border)",
+          },
+        }}
+      />
+      <Navbar />
+      <main>
+        <Hero />
         <About />
+        <Skills />
+        <Projects />
+        <Experience />
         <Contact />
-      </div>
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }
