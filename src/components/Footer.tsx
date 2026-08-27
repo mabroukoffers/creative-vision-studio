@@ -1,4 +1,10 @@
-import { ShieldCheck, Github, Linkedin, Twitter } from "lucide-react";
+import { ShieldCheck, Github, Linkedin, Mail } from "lucide-react";
+
+const socials = [
+  { Icon: Github, href: "https://github.com/Mostafa-SAID7", label: "GitHub" },
+  { Icon: Linkedin, href: "https://linkedin.com/in/mostafasamirsaid", label: "LinkedIn" },
+  { Icon: Mail, href: "mailto:m.ssaid356@gmail.com", label: "Email" },
+];
 
 export function Footer() {
   return (

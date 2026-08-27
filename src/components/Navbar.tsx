@@ -33,9 +33,9 @@ export function Navbar() {
       >
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#home" className="flex items-center gap-3">
-            <span className="text-[15px] font-semibold tracking-tight">Alex Rivera</span>
+            <span className="text-[15px] font-semibold tracking-tight">Mostafa Samir</span>
             <span className="hidden sm:inline-block h-3.5 w-px bg-border" />
-            <span className="mono-label hidden sm:inline">Banking &amp; Fintech Design</span>
+            <span className="mono-label hidden sm:inline">Banking &amp; Fintech Systems</span>
           </a>
 
           <ul className="hidden lg:flex items-center gap-1">
