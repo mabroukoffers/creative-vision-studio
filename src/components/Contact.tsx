@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import { Mail, MessageSquare, Send, ShieldCheck } from "lucide-react";
+import { Mail, MessageSquare, Send, ShieldCheck, Phone, Linkedin, Github } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
