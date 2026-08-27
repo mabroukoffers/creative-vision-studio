@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import { Mail, MessageSquare, Send, ShieldCheck } from "lucide-react";
+import { Mail, MessageSquare, Send, ShieldCheck, Phone, Linkedin, Github } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -51,21 +51,38 @@ export function Contact() {
               </p>
 
               <div className="mt-6 space-y-3">
-                <a href="mailto:hello@aaron.fin" className="flex items-center gap-3 rounded-xl border border-border bg-surface/60 p-4 hover:border-gold/40 transition-colors">
-                  <Mail className="h-4 w-4 text-gold" />
-                  <span className="text-sm">hello@aaron.fin</span>
-                </a>
+                {[
+                  { Icon: Mail, label: "m.ssaid356@gmail.com", href: "mailto:m.ssaid356@gmail.com" },
+                  { Icon: Phone, label: "+20 106 735 8073", href: "tel:+201067358073" },
+                  {
+                    Icon: Linkedin,
+                    label: "in/mostafasamirsaid",
+                    href: "https://linkedin.com/in/mostafasamirsaid",
+                  },
+                  { Icon: Github, label: "Mostafa-SAID7", href: "https://github.com/Mostafa-SAID7" },
+                ].map(({ Icon, label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel="noreferrer"
+                    className="flex items-center gap-3 rounded-xl border border-border bg-surface/60 p-4 hover:border-gold/40 transition-colors"
+                  >
+                    <Icon className="h-4 w-4 text-gold" />
+                    <span className="text-sm">{label}</span>
+                  </a>
+                ))}
                 <div className="flex items-center gap-3 rounded-xl border border-border bg-surface/60 p-4">
                   <ShieldCheck className="h-4 w-4 text-gold" />
                   <span className="text-sm text-muted-foreground">
-                    NDA & MSA ready · GDPR / SOC 2 aligned
+                    Tanta, Egypt · Remote · Full-time or contract
                   </span>
                 </div>
               </div>
 
               <div className="mt-8 rounded-2xl border border-gold/20 bg-gold/5 p-4 text-xs text-muted-foreground">
-                <span className="text-gold font-semibold">Now booking:</span>{" "}
-                Q3 engagements for digital banking, payment orchestration and KYC platforms.
+                <span className="text-gold font-semibold">Now booking:</span> engagements for
+                microservices, multi-tenant platforms and real-time financial systems.
               </div>
             </div>
           </Reveal>
